@@ -1,0 +1,155 @@
+body{
+	padding: 10px;
+	background-color: #a5a58d;
+	font-size: 125%;
+    line-height: 1.5;
+    background-image: url(../images/background.jpeg)
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 220%;
+}
+img{
+    width: 80%;
+    max-width: 100%;
+    margin: 5px 10px 20px 15px;
+    border: solid #6686e3 10px;
+    display: block;
+    height: auto;
+    box-shadow: 10px 15px #4656c4;
+}
+
+h2{
+    color: #000000;
+    font-size: 150%;
+    font-family: Anton, Arial;
+    text-align: center;
+}
+
+li{
+    display: inline-block;
+    margin: 6px;
+    padding-right: 5px;
+}
+
+li:hover{
+    background-color: #a4d6f7;
+}
+
+
+/* .history{
+    color: blue;
+    border: solid 5px;
+    text-transform: uppercase;
+}
+
+.literature{
+    color: blue;
+    border: solid 5px;
+    text-transform: uppercase;
+}
+
+.index{
+    color: blue;
+    border: solid 5px;
+    text-transform: uppercase;
+}
+
+.femdict{
+    color: blue;
+    border: solid 5px;
+    text-transform: uppercase;
+} */
+
+a:hover{
+    text-decoration: 3px underline #ffffff;
+}
+
+
+p{
+    line-height: 1.3;
+    margin: 20px 5px 20px 0;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+nav ul li{
+    text-align: center;
+    border: solid 2px #727171;
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 20px;
+    font-family: 'Baskervville', serif;
+    animation-name: title;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+
+}
+
+@keyframes title{
+    from{
+        background-color: rgb(146, 191, 251);
+        border: dashed 2px #727171;
+    }
+    to {
+        background-color: rgb(255, 255, 148);
+        border-radius: 50px;
+        font-size: larger;
+    }
+}
+
+
+nav a{
+    text-decoration: none;
+    color: #000000;
+    text-align: center;
+}
+
+
+.grid-item-a, .grid-item-b, .grid-item-c{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 680px){
+    body{
+        font-size: medium;
+    }
+}
+
+.grid-container{
+    margin-top: 20px;
+}
+
+dt{
+    margin-top: 15px;
+    font-family: system-ui;
+    font-size: 24px;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    margin-bottom: 15px;
+}
+
+
+img{
+    opacity: 100%;
+}
+
+img:hover{
+    opacity: 60%;
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+    nav ul li{
+        animation-duration: 0.001ms !important
+    }
+}
